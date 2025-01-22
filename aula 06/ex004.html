@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font: normal 20px Arial;
+            background-color: rgb(130, 130, 202);
+        }
+    </style>
 </head>
 <body>
     
     <script>
         var nome = window.prompt('whats your name?')
-        document.write( `olá ${nome} . seu nome tem ${nome.length} letras. `)
+        document.write( `olá, ${nome}. seu nome tem ${nome.length} letras. `)
+        document.write(`your name in upper case is ${nome.toUpperCase()} `)
+        document.write(`your name in lower case is ${nome.toLowerCase()} ` )
     </script>
 </body>
 </html>
