@@ -6,7 +6,7 @@
     <title>Eventos DOM</title>
     <style>
         div#area {
-            font: normal 15pt arial;
+            font: normal 25pt arial;
             background-color: aqua;
             color: rgb(119, 167, 209);
             width: 200px;
@@ -21,29 +21,28 @@
     <div id="area">
         interaja
     </div>
+
     <script>
-
-var a = window.document.getElementById('area')
-a.addEventListener ('click', clicar)
-
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
         function clicar() {
-           
-     a.innerText = 'clicou otario'
-       a.style.background = 'red'
-    
-    }
+            a.innerText = 'clicou!'
+            a.style.background = 'red'
+        }
 
         function entrar () {
-
-a.innerText = 'entrou'
-
+            a.innerText = 'entrou!'
         }
 
-        function sair() {
-
-a.innerText = 'saiu'
-a.style.background = 'aqua'
+        function sair () {
+            a.innerText = 'saiu!'
+            a.style.background = 'aqua'
         }
+    
     </script>
+
 </body>
 </html>
