@@ -1,9 +1,7 @@
-var pais= 'Canada'
-
-console.log(`vivendo em ${pais}`)
-
-if (pais = 'Brasil') {
-    console.log ('você é brasileiro')
+var pais = 'France'
+console.log(`Someone told me you live in ${pais}`)
+if ( pais == "Brasil") {
+    console.log('So you are Brazilian!!')
 } else {
-    console.log ('você é estrangeiro')
+    console.log('Then you are a foreigner!!')
 }

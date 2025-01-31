@@ -1,0 +1,12 @@
+body {
+    font: normal 18pt Arial;
+}
+
+div {
+    font: normal 16pt italic;
+    background-color: skyblue;
+    border-radius: 5px;
+    box-shadow: 10px;
+    width: 600px;
+    height: 300px;
+}

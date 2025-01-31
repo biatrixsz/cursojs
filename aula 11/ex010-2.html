@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Where you from?</h1>
+    <input type="text" name="iptxt" id="nat">
+    <input type="button" value="Confirmar" onclick="clicar()">
+    <div id="res">
+        <p>Ok, then:</p> 
+    </div>
+    <script>
+        function clicar () {
+            var ipnat = window.document.getElementById('nat')
+            var res = window.document.getElementById('res')
+            if (ipnat == "Brasileiro") {
+                res.innerHTML += ('You are a Brazilian')
+            } else {
+                res.innerHTML += ('You are a foreign')
+            }
+            res.innerHTML += (`<p>These are the results based on your birthplace ${ipnat} </p>`)
+        }
+        
+    </script>
+</body>
+</html>
